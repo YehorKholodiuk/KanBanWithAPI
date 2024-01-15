@@ -1,0 +1,39 @@
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal_active {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*opacity: 0 — прозрачность от 0 до 1*/
+/*pointer-events: none - элемент не реагирует на события мыши*/
+/*transition: 0.5s - контролирует скорость анимации*/
+/*transform: scale(1) - увеличивает или уменьшает элементы*/
+/*transition: 0.4s all — плавное изменение затрагивает все свойства элемента и для всех свойств происходит одновременно*/
+
+.content {
+    padding: 20px;
+    border-radius: 18px;
+    background-color: white;
+    width: 50%;
+    transform: scale(0.5);
+    transition: 0.3s all;
+}
+
+.content_active {
+    transform: scale(1);
+}
