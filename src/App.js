@@ -100,7 +100,7 @@ function App() {
 
   return (
       <div className="App">
-        <h1>Kanban bord</h1>
+        <h1>Kanban board</h1>
 
         <MyInput
             value={inputQuery}
